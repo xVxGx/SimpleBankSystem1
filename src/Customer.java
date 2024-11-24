@@ -1,12 +1,12 @@
 import java.time.LocalDate;
 
-public class customer {
-    private  String name;
-    private  String cpf;
-    private  LocalDate birthDate;
-    private  String address;
+public class Customer {
+    private final String name;
+    private final String cpf;
+    private final LocalDate birthDate;
+    private final String address;
 
-    public customer(String name, String address, String birthDate, String cpf) {
+    public Customer(String name, String address, String birthDate, String cpf) {
         this.name = name;
         this.address = address;
         this.birthDate = LocalDate.parse(birthDate);
